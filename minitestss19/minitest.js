@@ -30,8 +30,8 @@ function renderData() {
 renderData();
 
 function deletaData(index) {
-  let confirm = prompt("Bạn có chắc muốn xóa (có/không)").toLowerCase();
-  if (confirm == "có") {
+  ok = confirm("bạn có chắc muốn xóa không?")
+  if (ok) {
     data.splice(index, 1);
     renderData()
   } else {
@@ -44,6 +44,8 @@ function updateData(index) {
   let name = getElementById("contact-name").value;
   let phone = getElementById("contact-phone").value;
   let email = getElementById("contact-email").value;
+
+
 
 
 }
